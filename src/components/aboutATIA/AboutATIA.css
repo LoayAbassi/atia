@@ -1,0 +1,92 @@
+.aboutATIA {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: #201E1E;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7A7A7A;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    align-items: center; /* Centers text & image */
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne tout le contenu à gauche */
+    width: 100%;
+    flex: 1;
+    text-align: left;
+    min-height: 400px;
+    max-width: 400px; /* Augmente la largeur pour mieux aligner */
+}
+
+.section-title {
+    margin: 0; /* Supprime les marges qui peuvent centrer */
+    padding: 0;
+    text-align: left;
+    width: 100%; /* Assure que le h2 prend toute la largeur disponible */
+    font-size: 22px;
+    font-weight: bold;
+    color: #0A2918;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555555;
+    max-width: 100%; /* Permet aux paragraphes de s'aligner avec le titre */
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Same height as .text */
+}
+
+.image-box img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-box .img1 {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}

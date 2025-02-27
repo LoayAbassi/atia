@@ -1,0 +1,22 @@
+section{
+    text-align: center;
+}
+h2{
+    margin-top: 80px;
+    top:757px;
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28.34px;
+    color: #201E1E;
+}
+.img-items{
+    display: flex;
+    align-items: center;
+    top: 836px;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+.img-items > img{
+    padding-left: 50px;
+}

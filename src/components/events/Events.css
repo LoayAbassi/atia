@@ -1,0 +1,20 @@
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #0A2918;
+}
+.container {
+    text-align: center; /* Centre le titre */
+    margin-top: 20px;
+}
+
+.container > img {
+    display: block;
+    margin: 50px auto; /* Centre l'image horizontalement */
+    border-radius: 15px;
+}

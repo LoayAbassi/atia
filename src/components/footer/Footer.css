@@ -1,0 +1,71 @@
+footer {
+    width: 100%;  /* Prend toute la largeur de l'écran */
+    height: 350px;
+    border-radius: 71px;
+    background-color: #F7F9FC;
+    margin: 0;
+    padding: 40px 90px; /* Ajoute un peu d'espace interne */
+    display: flex;
+    flex-direction: column; /* Organise le contenu en colonne */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-table {
+    text-align: left;
+    width: 50%; /* Garde les éléments alignés à gauche */
+}
+
+.footer-table .other{
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #040505;
+    padding: 5px 20px; /* Espacement uniforme */
+}
+.special {
+    color:#040505;
+    font-family: Poppins,sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 8%;
+    padding: 5px 20px; /* Espacement uniforme */
+
+}
+
+
+footer img {
+    width: 80px;
+    height: 86px;
+    margin-right: auto; /* Pousse le logo à droite */
+}
+
+.footer-bottom {
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px; /* Réduit l'espace au-dessus du texte */
+}
+
+.footer-line {
+    width: 100%;  /* Assure que la ligne prend toute la largeur */
+    border: none; 
+    height: 1px;  
+    background-color: #040505; 
+    margin: 5px 0; /* Réduit l'espace au-dessus et en dessous */  
+}
