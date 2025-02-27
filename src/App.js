@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
-import AboutPage from './components/test/AboutPage';
 import Part from './components/Partners/Part';
 import AboutATIA from './components/aboutATIA/AboutATIA';
 import Bureau from './components/bureau/Bureau';
@@ -15,7 +14,6 @@ const App = () => {
     <div>
       <Navbar />
       <Header />
-      <AboutPage />
       <Part />
       <AboutATIA />
       <Bureau />
