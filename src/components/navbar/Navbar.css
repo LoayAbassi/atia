@@ -2,12 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  padding: 49px 154px;
-  position: sticky;
+  background-color: var(--color1);
+  padding: 49px 154px 2px 154px;
   z-index: 1000;
+  top: 0;
+  transition: all 0.3s ease-in-out;
 }
 
+.navbar-scrolled {
+  position: fixed;
+  width: 100%;
+  background-color: var(--color1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.navbar-placeholder {
+  height: 200px; 
+}
 .navbar-logo {
   height: 67.34px;
   width: 62px;
@@ -17,7 +30,7 @@
   list-style: none;
   display: flex;
   gap: 48px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font1)
 }
 
 .navbar-links li {
@@ -26,7 +39,7 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: #1A1A1AF2;
+  color: var(--color13);
   font-size: 20px;
   font-weight: 600;
 }
@@ -36,8 +49,8 @@
 }
 
 li .contact {
-  color: white;
-  background-color: var(--bg);
+  color: var(--color1);
+  background-color: var(--color2);
   border-radius: 100px;
   padding: 20px 36px;
 }
@@ -51,7 +64,6 @@ li .contact {
   cursor: pointer;
 }
 
-/* Medium screens  */
 @media (max-width: 1024px) {
   .navbar {
     padding: 30px 80px;
@@ -66,7 +78,6 @@ li .contact {
   }
 }
 
-/* Small screens  */
 @media (max-width: 768px) {
   .navbar {
     padding: 20px 40px;
@@ -78,7 +89,7 @@ li .contact {
     position: absolute;
     top: 80px;
     right: 0;
-    background: white;
+    background: var(--color1);
     width: 200px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -93,7 +104,6 @@ li .contact {
   }
 }
 
-/* Extra small screens */
 @media (max-width: 480px) {
   .navbar {
     padding: 15px 20px;
@@ -115,9 +125,10 @@ li .contact {
   }
 
   li .contact {
-    color: white;
+    color: var(--color1);
     background-color: var(--bg);
     border-radius: 100px;
     padding: 10px 18px;
   }
 }
+
