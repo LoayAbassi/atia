@@ -11,7 +11,11 @@
     "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+<<<<<<< HEAD
     "react-scripts": "5.0.1",
+=======
+    "react-scripts": "^5.0.1",  
+>>>>>>> a2ae5e8969db5df85afff565f30aaf0ba90ab7d7
     "web-vitals": "^2.1.4"
   },
   "scripts": {
