@@ -14,11 +14,21 @@
   --color12: #AAAAAA;
   --color13: #1A1A1AF2;
   --color14:#F4F4F4;
+  
 
   /* font */
   --font1: 'Montserrat', sans-serif;
   --font2: 'Mona-Sans', sans-serif;
-  --font-size: clamp(14px, 1vw, 18px); /* Responsive font size */
+  --font-size: clamp(9px, 1vw, 18px);
+  --font-16: clamp(8px, 1vw, 16px);
+  --font-20: clamp(12px, 2vw, 20px);
+  --font-22: clamp(13px, 2vw, 22px);
+
+  --font-25: clamp(14px, 2.5vw, 25px);
+  --font-28: clamp(16px, 3vw, 28px);
+  --font-36: clamp(20px, 4vw, 36px);
+  --font-48: clamp(24px, 5vw, 48px);
+  --font-64: clamp(30px, 6vw, 64px);
 
   /* spacing */
   --padding-x: clamp(10px, 5vw, 40px);
@@ -32,38 +42,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  :root {
-    --font-size: clamp(12px, 1.2vw, 16px);
-    --padding-x: clamp(8px, 4vw, 30px);
-    --padding-y: clamp(4px, 2vw, 15px);
-    --margin-x: clamp(8px, 3vw, 25px);
-    --margin-y: clamp(4px, 2vw, 12px);
-    --gap: clamp(6px, 1.5vw, 20px);
-  }
-}
-
-@media (max-width: 768px) {
-  :root {
-    --font-size: clamp(10px, 1.5vw, 14px);
-    --padding-x: clamp(5px, 3vw, 20px);
-    --padding-y: clamp(3px, 1.5vw, 10px);
-    --margin-x: clamp(5px, 2.5vw, 20px);
-    --margin-y: clamp(3px, 1.5vw, 8px);
-    --gap: clamp(4px, 1vw, 16px);
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --font-size: clamp(9px, 1.2vw, 12px);
-    --padding-x: clamp(3px, 2vw, 15px);
-    --padding-y: clamp(2px, 1vw, 8px);
-    --margin-x: clamp(3px, 2vw, 15px);
-    --margin-y: clamp(2px, 1vw, 6px);
-    --gap: clamp(2px, 0.8vw, 12px);
-  }
 }

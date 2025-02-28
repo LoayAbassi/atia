@@ -12,11 +12,11 @@ const Part = () => {
         <section>
             <h2>Nos partenaires</h2>
             <div className='img-items'>
-                <img src={img1} alt="garage logo" width='180px' height='36.19px'/>
-                <img src={img2} alt='factory logo' width="182.25px" height='40px'/>
-                <img src={img3} alt='Manouba university logo' width="153.81px" height='57.79px'/>
-                <img src={img4} alt='CCFT logo' width="140px" height='32.6px'/>
-                <img src={img5} alt='GIZ logo' width="160px" height='41.6px'/>
+                <img src={img1} alt="garage logo" />
+                <img src={img2} alt='factory logo' />
+                <img src={img3} alt='Manouba university logo' />
+                <img src={img4} alt='CCFT logo' />
+                <img src={img5} alt='GIZ logo'/>
             </div>
         </section>
     )

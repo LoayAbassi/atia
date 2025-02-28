@@ -1,3 +1,4 @@
+
 .aboutATIA {
     text-align: center;
     margin-top: 100px;
@@ -5,19 +6,19 @@
 
 .title {
     font-weight: 600;
-    font-size: 48px;
+    font-size: var(--font-48) !important;
     font-family: 'Montserrat', sans-serif;
-    color: #201E1E;
+    color: var(--color6) !important;
 }
 
 .subtitle {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font1);
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font-20);
     line-height: 28px;
-    color: #7A7A7A;
-    max-width: 500px;
+    color: var(--color5);
+    max-width: 630px;
     margin: 0 auto;
 }
 
@@ -43,11 +44,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligne tout le contenu à gauche */
-    width: 100%;
     flex: 1;
     text-align: left;
     min-height: 400px;
-    max-width: 400px; /* Augmente la largeur pour mieux aligner */
+    max-width: 600px; 
+
+}
+.pg{
+    line-height: 33px;
+
+    max-height: 330px;
+    max-width: 540px; 
+    font-size: var(--font-22);
+
 }
 
 .section-title {
@@ -57,36 +66,100 @@
     width: 100%; /* Assure que le h2 prend toute la largeur disponible */
     font-size: 22px;
     font-weight: bold;
-    color: #0A2918;
+    color: var(--color6);
     margin-bottom: 10px;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font1);
     font-size: 16px;
     line-height: 1.6;
     text-align: justify;
-    color: #555555;
+    color: var(--color4);
     max-width: 100%; /* Permet aux paragraphes de s'aligner avec le titre */
 }
 
-.image-box {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+
+.card-container {
+    width: 547px; /* Adjust as needed */
+    padding: 40px;
+    height: 357.8px;
+    background-color: #F9F4F0;
+    border-radius: 16px; /* Large radius for corner effects */
+    display: flex; /* Center the card-header inside */
     align-items: center;
-    min-height: 400px; /* Same height as .text */
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.image-box img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+
+.card-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color1);
+    background-color: var(--color2);
+    width: 300.5px;
+    height: 300.5px;
+    border: 1.28419px solid #FFFFFF;
+    border-radius: 41px !important;
 }
-.image-box .img1 {
-    width: 500px;
-    height: 400px;
+.profile-image {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    aspect-ratio: 1 / 1;
+}
+.name {
+    font-size: calc(var(--font-25) + 0.68px) !important;
+    margin-bottom: 10px;
+    color: #FFFFFFF2;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+.title1 {
+    font-size: calc(var(--font-16) + .69px);
+    margin-bottom: 5px;
+    color:#FFFFFFCC;
+}
+  
+.honorary {
+    font-size: calc(var(--font-16) + .69px);
+    color: #FFFFFFCC;
+
+}
+
+.corner-box {
+    position: absolute;
+    width: 234px; 
+    height: 234px;
+    background-color: transparent;
+    border: 2px solid #E0E0E063;
+    border-radius: 32.5px;
+}
+
+.top-left { top: -172.09px; left: -130px; }
+.top-right { top: -172.09px; right: -130px; }
+.bottom-left { bottom: -172.09px; left: -130px; }
+.bottom-right { bottom: -172.09px; right: -130px; }
+.bottom{bottom: -195.84px;}
+.top{top: -195.84px;}
+
+.profile-image2 {
+    width: 233.56px;
+    height: 233.56px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    aspect-ratio: 1 / 1;
 }

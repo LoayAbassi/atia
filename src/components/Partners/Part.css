@@ -1,12 +1,12 @@
 section {
-    margin-top: 70px;
+    margin-top: var(--section-margin, 70px);
     text-align: center;
 }
 
 h2 {
     margin-top: var(--margin-y);
     font-weight: 600;
-    font-size: calc(var(--font-size) + 12px);
+    font-size: var(--font-28) !important;
     font-family: var(--font1);
     line-height: 1.2;
     color: var(--color3);
@@ -17,14 +17,15 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: var(--margin-y);
-    gap: calc(var(--gap) + 100px);
+    margin-top: calc(var(--margin-y) + 35px);
+    gap: clamp(20px, calc(var(--gap) + 50px), 80px);
     flex-wrap: wrap;
 }
 
 /* Images */
-.img-items > img {
-    width: auto;
+.img-items img {
+    max-width: clamp(80px, 40%, 180px);
+    max-height: clamp(30px, 30vh, 40px);
     height: auto;
-    max-height: var(--image-height);
+    width: auto;
 }

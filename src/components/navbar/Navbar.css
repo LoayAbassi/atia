@@ -3,13 +3,17 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--color1);
-  padding: 49px 154px 2px 154px;
+  padding: 49px 154px 5px 154px;
   z-index: 1000;
   top: 0;
   transition: all 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
+
 }
 
 .navbar-scrolled {
+  padding-top: 30px;
   position: fixed;
   width: 100%;
   background-color: var(--color1);
