@@ -24,7 +24,7 @@
   --font-16: clamp(8px, 1vw, 16px);
   --font-20: clamp(12px, 2vw, 20px);
   --font-22: clamp(13px, 2vw, 22px);
-
+  
   --font-25: clamp(14px, 2.5vw, 25px);
   --font-28: clamp(16px, 3vw, 28px);
   --font-32: clamp(26px, 3vw, 32px);
