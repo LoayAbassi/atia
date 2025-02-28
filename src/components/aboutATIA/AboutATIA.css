@@ -91,6 +91,8 @@ p {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -109,8 +111,9 @@ p {
     border-radius: 41px !important;
 }
 .profile-image {
-    width: 133px;
-    height: 133px;
+
+    width: calc(var(--width) + 33.56px) ;
+    height: calc(var(--height) + 33.56px) ;
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
@@ -143,7 +146,7 @@ p {
     width: 234px; 
     height: 234px;
     background-color: transparent;
-    border: 2px solid #E0E0E063;
+    border: 2px solid var(--color15);
     border-radius: 32.5px;
 }
 
@@ -155,11 +158,58 @@ p {
 .top{top: -195.84px;}
 
 .profile-image2 {
-    width: 233.56px;
-    height: 233.56px;
+    width: calc(var(--width) + 133.56px) ;
+    height: calc(var(--height) + 133.56px) ;
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
     display: block;
     aspect-ratio: 1 / 1;
 }
+
+.two-cards{
+    display: flex;
+    flex-direction: column;
+    color: var(--color1);
+    gap: 37.34px;
+
+}
+.to-top{
+    transform: rotate(-1.5deg);
+    background-color: var(--color2);
+    
+    color: var(--color1);
+}
+
+.to-bottom{
+    transform: rotate(1deg);
+    color: #000000F2;
+}
+.two-cards > .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    border-radius: 14.52px;
+    width: 444.75px;
+    padding: 20px 30px;
+    box-shadow: 0px 3.63px 8.17px 5px #020D310A;
+}
+.card-text{
+    font-size: calc(var(--font-22) + 1.36px);
+}
+
+.to-bottom.card-text{
+    font-size: calc(var(--font-22) + 1.36px);
+    color: #000000CC;
+}
+.nb{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(var(--font-32) + .67px);
+    line-height: 150%;
+}
+
+

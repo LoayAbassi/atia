@@ -54,9 +54,23 @@ const AboutATIA = () => {
                             cinquantaine de conférences, workshops, écoles de formation et rencontres thématiques autour de l&apos;IA et
                             ce, aux échelles nationale et internationale.</p>
                     </div>
-                    <div className="image-box">
-                        
-                        <img src="/images/stats.svg" alt="AI Icon" />
+                    <div className="two-cards">
+                        <div className='card bg to-top'>
+                            <span className='nb'>
+                                300
+                            </span>
+                            <span className='card-text'>
+                                Thèses de doctorat
+                            </span>
+                        </div>
+                        <div className='card to-bottom'>
+                            <span className='nb'>
+                                1500
+                            </span>
+                            <span className='card-text'>
+                                Articles Scientifiques 
+                            </span>
+                        </div>
                     </div>
                 </div>
 
