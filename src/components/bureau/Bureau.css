@@ -20,12 +20,12 @@
 
 /* Cards Grid */
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
-    gap: 20px; /* Space between cards */
-    justify-content: center;
-    padding: 50px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
   
   /* Card Styling */
   .custom-card {

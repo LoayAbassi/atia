@@ -32,11 +32,15 @@
     display: flex;
     align-items: center; /* Centers text & image */
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 40px;
     padding: 40px 0;
 }
 
 .reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
     flex-direction: row-reverse;
 }
 
@@ -91,8 +95,7 @@ p {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 
@@ -172,7 +175,8 @@ p {
     flex-direction: column;
     color: var(--color1);
     gap: 37.34px;
-
+    align-items: center;
+    justify-content: center;
 }
 .to-top{
     transform: rotate(-1.5deg);
@@ -212,4 +216,35 @@ p {
     line-height: 150%;
 }
 
+@media (max-width: 768px) {
+    .two-cards {
+        gap: 20px; /* Reduce gap */
+    }
 
+    .two-cards > .card {
+        width: 100%; /* Full width */
+        max-width: 400px; /* Limit max width */
+        flex-direction: column; /* Stack content */
+        text-align: center; /* Center text */
+        padding: 15px;
+    }
+
+    .to-top, .to-bottom {
+        transform: none; /* Remove rotation on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .two-cards > .card {
+        max-width: 320px; /* Smaller width for very small screens */
+        padding: 12px;
+    }
+
+    .card-text {
+        font-size: var(--font-18); /* Reduce text size */
+    }
+
+    .nb {
+        font-size: var(--font-28);
+    }
+}

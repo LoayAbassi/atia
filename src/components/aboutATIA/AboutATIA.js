@@ -25,7 +25,7 @@ const AboutATIA = () => {
                             SOIE pour Stratégies d&apos;Optimisation et Informatique intelligentE comprenant plus d&apos;une centaine de
                             chercheurs universitaires spécialistes en IA.</p>
                     </div>
-                        <div className='card-container'>
+                    <div className='card-container'>
                             <div className="corner-box top-left"></div>
                             <div className="corner-box top-right"></div>
                             <div className="corner-box bottom-left"></div>
@@ -40,10 +40,7 @@ const AboutATIA = () => {
                                 <h3 className="title1">Fondateur de l'ATIA </h3>
                                 <h3 className="honorary">Président d'honneur</h3>
                             </div>
-                        </div>
-                        
-                        
-                            
+                    </div>          
                 </div>
 
                 <div className="section reverse">

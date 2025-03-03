@@ -1,71 +1,85 @@
 footer {
-    width: 100%;  /* Prend toute la largeur de l'écran */
-    height: 350px;
-    border-radius: 71px;
+    width: 100%;
+    height: auto; /* Allow flexible height */
+    border-radius: 50px;
     background-color: #F7F9FC;
     margin: 0;
-    padding: 40px 90px; /* Ajoute un peu d'espace interne */
+    padding: 40px 5%; /* Use percentage for better responsiveness */
     display: flex;
-    flex-direction: column; /* Organise le contenu en colonne */
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Footer content container */
 .footer-container {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 20px; /* Space between elements */
 }
 
+/* Footer table */
 .footer-table {
     text-align: left;
-    width: 50%; /* Garde les éléments alignés à gauche */
+    flex: 1; /* Flexible width */
+    min-width: 250px; /* Avoid collapsing on small screens */
+    max-width: 50%; /* Prevents it from growing too much */
 }
 
-.footer-table .other{
-    font-family: Poppins,sans-serif;
-    font-weight: 400;
+/* Footer text styles */
+.footer-table .other {
+    font-family: Poppins, sans-serif;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
     color: #040505;
-    padding: 5px 20px; /* Espacement uniforme */
+    padding: 5px 20px;
 }
+
 .special {
-    color:#040505;
-    font-family: Poppins,sans-serif;
     font-weight: 600;
     font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 8%;
-    padding: 5px 20px; /* Espacement uniforme */
-
+    color: #040505;
+    padding: 5px 20px;
 }
 
-
+/* Footer logo */
 footer img {
     width: 80px;
-    height: 86px;
-    margin-right: auto; /* Pousse le logo à droite */
+    height: auto;
 }
 
+/* Footer bottom text */
 .footer-bottom {
-    font-family: Poppins,sans-serif;
-    font-weight: 400;
+    font-family: Poppins, sans-serif;
     font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0%;
-    margin-bottom: 5px;
     text-align: center;
     width: 100%;
-    margin-top: 5px; /* Réduit l'espace au-dessus du texte */
+    margin-top: 10px;
 }
 
+/* Footer line */
 .footer-line {
-    width: 100%;  /* Assure que la ligne prend toute la largeur */
-    border: none; 
-    height: 1px;  
-    background-color: #040505; 
-    margin: 5px 0; /* Réduit l'espace au-dessus et en dessous */  
+    width: 100%;
+    height: 1px;
+    background-color: #040505;
+    margin: 10px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-table {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer img {
+        margin: 0 auto; /* Center the logo */
+    }
 }

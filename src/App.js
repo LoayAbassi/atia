@@ -17,7 +17,6 @@ const App = () => {
       <Header />
       <Part />
       <AboutATIA/>
-      <Bureau/>
       <Events/>
       <Footer/>
     </div>

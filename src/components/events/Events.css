@@ -1,20 +1,48 @@
-
-h2{
+h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 48px;
     line-height: 52px;
-    letter-spacing: 0%;
     text-align: center;
     color: #0A2918;
-}
-.container {
-    text-align: center; /* Centre le titre */
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+/* Center container */
+.container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 5%; /* Add padding for responsiveness */
+}
+
+/* Responsive Image */
 .container > img {
     display: block;
-    margin: 50px auto; /* Centre l'image horizontalement */
+    margin: 50px auto;
     border-radius: 15px;
+    max-width: 100%; /* Ensure image is never larger than the screen */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .container > img {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .container > img {
+        margin: 20px auto;
+    }
 }
