@@ -10,7 +10,7 @@ import img5 from "./images/5.png";
 const Part = () => {
     return (
 
-        <section>
+        <section id='part'>
             <h2>Nos partenaires</h2>
             <div className='img-items'>
                 <img src={img1} alt="garage logo" />

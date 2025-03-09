@@ -18,7 +18,7 @@ const bureauMembers = [
 
 const Bureau = () => {
   return (
-    <div>
+    <div id='bureau'>
       <section className='title'>
         <h2>Bureau Exécutif</h2>
         <p>Les Responsables de L&apos;ATIA</p>

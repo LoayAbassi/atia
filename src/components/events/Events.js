@@ -3,7 +3,7 @@ import './Events.css';
 
 const Events = () => {
     return (
-        <div className='container'>
+        <div className='container' id='events'>
             <h2>Evénements</h2>
             <img src="./images/banner.jpeg" alt='banner' width="900rem"/>
         </div>
