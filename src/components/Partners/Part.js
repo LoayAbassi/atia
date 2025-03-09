@@ -9,6 +9,7 @@ import img5 from "./images/5.png";
 
 const Part = () => {
     return (
+
         <section>
             <h2>Nos partenaires</h2>
             <div className='img-items'>

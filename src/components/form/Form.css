@@ -1,0 +1,106 @@
+form {
+    max-width: 500px;
+    margin: 100px 400px;
+}
+
+label {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0A033C;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 5px solid #DEDDE4;
+    border-radius: 10px;
+    padding: 10px;
+    width: 646px;
+    height: 80px;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.icon, .flag {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formItem {
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+
+.formItem::placeholder {
+    text-align: left;
+    padding-left: 5px;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+
+.formItem:focus {
+    border: none;
+    outline: none;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    border: 5px solid #DEDDE4;
+    border-radius: 10px;
+    padding: 10px;
+    width: 646px;
+    height: 80px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.upload-btn {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #5D5A6F;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #F89A32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #F89A32;
+}
+
+input::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0%;
+    color: #5D5A6F;
+    padding-top: 5px;
+}

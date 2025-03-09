@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from "./logo.png";
+import { Link } from "react-router-dom";
+
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +18,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   return (
     <> 
       <div className='"navbar-placeholder'>
@@ -28,12 +32,13 @@ const Navbar = () => {
           </button>
 
           <ul className={`navbar-links ${menuOpen ? 'show' : ''}`}>
-            <li><a href="#home">L'ATIA</a></li>
-            <li><a href="#about">Partenaires</a></li>
-            <li><a href="#services">Bureau Exécutif</a></li>
-            <li><a href="#contact">Evénement</a></li>
-            <li><a href="#contact">Adhésion</a></li>
-            <li><a href="#contact" className="contact">Contact</a></li>
+
+            <li><Link to="/">L'ATIA</Link></li>
+            <li><a href="/#part">Partenaires</a></li>
+            <li><a href="/#bureau">Bureau Exécutif</a></li>
+            <li><a href="/#events">Evénement</a></li>
+            <li><Link to="/adh">Adhésion</Link></li>
+            <li><a href="/#contact" className="contact">Contact</a></li>
           </ul>
         </nav>
     </>
